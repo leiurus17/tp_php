@@ -13,6 +13,9 @@
 
 		$literally = "My $variable will print!";
 		print($literally);
+		
+		$ninja = "Uzumaki Naruto da!";
+		print($ninja);
 	?>
 </body>
 </html>
