@@ -21,6 +21,8 @@
 		echo "Salary of mohammad is ". $salaries['mohammad'] ."<br />";
 		echo "Salary of qadir is ". $salaries['qadir'] ."<br />";
 		echo "Salary of zara is ". $salaries['zara'] ."<br />";
+
+		//Test change
 	?>
 </body>
 </html>
