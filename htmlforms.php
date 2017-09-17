@@ -19,6 +19,7 @@ if(isset($_POST["name"]) || isset($_POST["age"])) {
 			Name: <input type="text" name="name" />
 			<br />
 			Age: <input type="text" name="age" />
+			<br />
 			<input type = "submit" />
 		</form>
 	</body>
