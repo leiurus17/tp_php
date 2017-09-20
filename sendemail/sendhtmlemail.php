@@ -3,7 +3,10 @@
 		<title>Sending HTML email using PHP</title>
 	</head>
 	<body>
-		<?php 
+		<?php
+		  
+		  //@TODO Try on Saturday to send e-mail to gmail from localhost
+		
 		  $to       = "uzumakinaruto@gmail.com";
 		  $subject  = "This is subject";
 		  
