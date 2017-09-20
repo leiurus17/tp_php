@@ -28,7 +28,7 @@
 ?>
 <html>
 	<head>
-		<title>PHP Upload file example</title>
+		<title>PHP Upload File Example</title>
 	</head>
 	<body>
 		<form action = "" method = "POST" enctype = "multipart/form-data">
