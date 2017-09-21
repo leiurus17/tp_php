@@ -41,7 +41,7 @@
 			if($retval) {
 				echo "Table employee created successfully\n";
 			} else {
-				die("Could create table: ". mysql_error());
+				die("Could not create table: ". mysql_error());
 			}
 
 			mysql_close($conn);
