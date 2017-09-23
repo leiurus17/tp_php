@@ -1,12 +1,12 @@
 <html>
 	<head>
-		<title>PHP Update Record</title>
+		<title>PHP Delete Record</title>
 	</head>
 
 	<body>
 
 		<?php
-		  if(isset($_POST['update'])) {
+		  if(isset($_POST['delete'])) {
     			$dbhost = 'localhost:3306';
     			$dbuser = 'guest';
     			$dbpass = '';
@@ -31,8 +31,7 @@
     			$emp_id     = $_POST['emp_id'];
     			$emp_salary = $_POST['emp_salary'];
     			
-    			$sql = "UPDATE employee ".
-        			   "SET    emp_salary = $emp_salary ".
+    			$sql = "DELETE FROM employee ".
         			   "WHERE  emp_id     = $emp_id";
     			
     			mysql_select_db("test_db");
@@ -40,7 +39,7 @@
     			$retval = mysql_query($sql, $conn);
     			
     			if(! $retval) {
-    			    die("Could not update data: ". mysql_error());
+    			    die("Could not delete data: ". mysql_error());
     			}
     			
     			echo "Updated data successfully\n";
@@ -57,17 +56,13 @@
 					<td><input name = "emp_id" type = "text" id = "emp_id"></td>
 				</tr>
 				<tr>
-					<td width = "100">Employee Salary</td>
-					<td><input name = "emp_salary" type = "text" id = "emp_salary"></td>
-				</tr>
-				<tr>
 					<td width = "100"> </td>
 					<td> </td>
 				</tr>
 				<tr>
 					<td width = "100"> </td>
 					<td>
-						<input name = "update" type = "submit" id = "update" value = "Update" />
+						<input name = "delete" type = "submit" id = "delete" value = "Delete" />
 				</tr>
 			</table>
 		
