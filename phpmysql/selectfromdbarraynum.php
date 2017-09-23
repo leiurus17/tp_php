@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>PHP Select Records using mysql_fetch_assoc</title>
+		<title>PHP Select Records using mysql_fetch_array MYSQL_NUM</title>
 	</head>
 
 	<body>
@@ -35,10 +35,10 @@
 			    die("Could not get data: ". mysql_error());
 			}
 			
-			while($row = mysql_fetch_assoc($retval)) {
-			    echo "EMP ID: {$row['emp_id']} <br />".
-			 	     "EMP NAME : {$row['emp_name']} <br />".
-			 	     "EMP SALARY : {$row['emp_salary']} <br />".
+			while($row = mysql_fetch_array($retval, MYSQL_NUM)) {
+			    echo "EMP ID: {$row[0]} <br />".
+			 	     "EMP NAME : {$row[1]} <br />".
+			 	     "EMP SALARY : {$row[2]} <br />".
 			 	     "----------------------------------<br />";
 			}
 			
