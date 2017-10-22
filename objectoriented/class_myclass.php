@@ -17,6 +17,10 @@
         private function myPrivateFunction() {
             return ("I'm not visible outside!");
         }
+        
+        protected function myProtectedFunction () {
+            return ("I'm visible on child class.");
+        }
     }
 
 
