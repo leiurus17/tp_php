@@ -3,7 +3,7 @@
     class MyClass {
         private $car             = "skoda";
         var     $driver          = "SRK";  // Eclipse is throwing error if without var keyword
-        const   $required_margin = 1.7;        
+        const   REQUIRED_MARGIN = 1.7;        
         
         
         function __construct($par) {
