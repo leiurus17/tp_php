@@ -5,6 +5,8 @@
     $physics     = new Books();
     $chemistry   = new Books();
     $mathematics = new Books();
+    
+    $astronomy   = new Books("Stargazing for Dummies", 5);
 
     $physics     -> setTitle("Physics for High School");
     $chemistry   -> setTitle("Advanced Chemistry");
@@ -17,5 +19,6 @@
     $physics     -> getTitle();
     $chemistry   -> getTitle();
     $mathematics -> getTitle();
+    $astronomy   -> getTitle();
     
 ?>
