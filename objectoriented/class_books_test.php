@@ -1,12 +1,13 @@
 <?php 
 
     require 'class_books.php';
+    require 'class_book.php';
     
     $physics     = new Books();
     $chemistry   = new Books();
     $mathematics = new Books();
     
-    $astronomy   = new Books("Stargazing for Dummies", 5);
+    $astronomy   = new Book("Stargazing for Dummies", 5);
 
     $physics     -> setTitle("Physics for High School");
     $chemistry   -> setTitle("Advanced Chemistry");
